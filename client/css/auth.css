@@ -1,0 +1,259 @@
+/* ==========================================
+   AUTHENTICATION PAGE STYLES
+========================================== */
+
+/* ---------- PAGE LAYOUT ---------- */
+
+.auth-section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: #f5f7fa;
+}
+
+/* ---------- AUTH CARD ---------- */
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.auth-card h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.auth-card p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* ---------- FORM ---------- */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ---------- INPUT GROUP ---------- */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-group input {
+    padding: 14px 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0077ff;
+    box-shadow: 0 0 5px rgba(0,119,255,0.2);
+}
+
+/* ---------- PASSWORD FIELD ---------- */
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+/* ---------- REMEMBER & FORGOT ---------- */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.form-options a {
+    text-decoration: none;
+    color: #0077ff;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- BUTTON ---------- */
+
+.auth-btn {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #0077ff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background: #005fd1;
+}
+
+/* ---------- DIVIDER ---------- */
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.divider span {
+    margin: 0 12px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* ---------- SOCIAL BUTTONS ---------- */
+
+.social-login {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.social-btn:hover {
+    background: #f3f3f3;
+}
+
+/* ---------- FOOTER TEXT ---------- */
+
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #666;
+}
+
+.auth-footer a {
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: 500;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- ERROR MESSAGE ---------- */
+
+.error-message {
+    background: #fdecea;
+    color: #c0392b;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+/* ---------- SUCCESS MESSAGE ---------- */
+
+.success-message {
+    background: #eafaf1;
+    color: #27ae60;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+
+    .auth-card {
+        padding: 30px;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .social-login {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .auth-card {
+        padding: 25px 20px;
+    }
+
+    .auth-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .auth-btn {
+        font-size: 15px;
+    }
+
+    .input-group input {
+        padding: 12px 14px;
+    }
+
+}

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Product Details | ShopEase</title>
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/product.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ==========================
+     NAVBAR
+========================== -->
+
+
+<header class="navbar">
+
+
+<div class="container navbar-container">
+
+
+
+<div class="logo">
+
+<a href="../index.html" style="text-decoration: none; color: #2c3e50; font-weight: 700; font-size: 1.5rem;">
+
+ShopEase
+
+</a>
+
+</div>
+
+
+
+
+
+<nav class="nav-links">
+
+
+<a href="../index.html">
+Home
+</a>
+
+
+<a href="products.html">
+Products
+</a>
+
+
+<a href="cart.html">
+
+Cart
+
+<span class="cart-count">
+0
+</span>
+
+</a>
+
+
+<a href="profile.html">
+Profile
+</a>
+
+
+</nav>
+
+
+
+
+
+<div class="nav-icons">
+
+
+<a href="login.html">
+Login
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- ==========================
+     PRODUCT DETAILS
+========================== -->
+
+
+<section class="product-details-section">
+
+
+<div class="container product-details">
+
+
+
+
+
+<!-- Product Image -->
+
+
+<div class="product-image">
+
+
+<img 
+id="productImage"
+src="../images/misc/no-image.png"
+alt="Product">
+
+
+</div>
+
+
+
+
+
+
+<!-- Product Information -->
+
+
+<div class="product-info">
+
+
+
+<p 
+class="product-category"
+id="productCategory">
+
+Category
+
+</p>
+
+
+
+
+
+<h1 
+id="productName">
+
+Product Name
+
+</h1>
+
+
+
+
+
+<div class="rating">
+
+
+<span>
+⭐⭐⭐⭐⭐
+</span>
+
+
+<span>
+(120 Reviews)
+</span>
+
+
+</div>
+
+
+
+
+
+
+<h2 
+class="product-price"
+id="productPrice">
+
+₹0
+
+</h2>
+
+
+
+
+
+
+<p 
+class="product-description"
+id="productDescription">
+
+
+Product description will appear here.
+
+
+</p>
+
+
+
+
+
+
+
+
+<!-- Quantity -->
+
+
+<div class="quantity-box">
+
+
+<label>
+Quantity:
+</label>
+
+
+<div class="quantity-control">
+
+
+<button id="decreaseQty">
+-
+</button>
+
+
+<input 
+type="number"
+id="quantity"
+value="1"
+min="1">
+
+
+<button id="increaseQty">
++
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Buttons -->
+
+
+<div class="product-actions">
+
+
+
+<button 
+class="add-cart-btn"
+id="addToCartBtn">
+
+
+Add To Cart
+
+
+</button>
+
+
+
+
+
+<button 
+class="buy-btn"
+id="buyNowBtn">
+
+
+Buy Now
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+<script src="../js/main.js"></script>
+<script src="../js/product.js"></script>
+
+<!-- ==========================
+     FEATURES
+========================== -->
+
+
+<section class="features">
+
+
+<div class="container features-grid">
+
+
+
+<div class="feature-card">
+
+
+<img src="../images/icons/delivery.png">
+
+
+<h3>
+Fast Delivery
+</h3>
+
+
+<p>
+Quick and reliable shipping.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="feature-card">
+
+
+<img src="../images/icons/secure-payment.png">
+
+
+<h3>
+Secure Payment
+</h3>
+
+
+<p>
+Safe online transactions.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="feature-card">
+
+
+<img src="../images/icons/return.png">
+
+
+<h3>
+Easy Returns
+</h3>
+
+
+<p>
+Hassle free returns.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+     RELATED PRODUCTS
+========================== -->
+
+
+<section class="related-products">
+
+
+<div class="container">
+
+
+
+<h2>
+Related Products
+</h2>
+
+
+
+<div class="products-grid"
+id="relatedProducts">
+
+
+<!-- JS will insert products -->
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ==========================
+     FOOTER
+========================== -->
+
+
+<footer class="footer">
+
+
+<div class="container footer-content">
+
+
+<div>
+
+
+<h3>
+ShopEase
+</h3>
+
+
+<p>
+Your online shopping partner.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+
+<h3>
+Links
+</h3>
+
+
+<a href="../index.html">
+Home
+</a>
+
+
+<a href="products.html">
+Products
+</a>
+
+
+<a href="cart.html">
+Cart
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+
+<h3>
+Contact
+</h3>
+
+
+<p>
+support@shopease.com
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+<!-- JavaScript -->
+
+
+<script src="../js/main.js"></script>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/product.js"></script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | ShopEase</title>
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/products.css">
+
+    <link rel="stylesheet" href="../css/responsive.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+
+<header class="navbar">
+
+
+    <div class="container navbar-container">
+
+
+        <div class="logo">
+
+                <a href="../index.html" style="text-decoration: none; color: #2c3e50; font-weight: 700; font-size: 1.5rem;">
+
+                    ShopEase
+
+        </div>
+
+
+
+        <nav class="nav-links">
+
+
+            <a href="../index.html">
+                Home
+            </a>
+
+
+            <a href="products.html" class="active">
+                Products
+            </a>
+
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+
+        </nav>
+
+
+
+        <div class="nav-icons">
+
+
+            <a href="cart.html">
+
+                🛒
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+
+
+            <a href="login.html">
+                Login
+            </a>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</header>
+
+
+
+
+
+<!-- =========================
+     PAGE HEADER
+========================= -->
+
+
+<section class="page-header">
+
+
+    <div class="container">
+
+
+        <h1>
+            Our Products
+        </h1>
+
+
+        <p>
+            Explore our latest collection
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- =========================
+     PRODUCTS SECTION
+========================= -->
+
+
+<section class="products-section">
+
+
+<div class="container">
+
+
+
+<!-- Search + Filter -->
+
+
+<div class="product-tools">
+
+
+    <div class="search-box">
+
+
+        <input 
+        type="text"
+        class="search-input"
+        placeholder="Search products...">
+
+
+    </div>
+
+
+
+
+
+    <div class="filter-box">
+
+
+
+        <select id="categoryFilter">
+
+
+            <option value="All">
+                All Categories
+            </option>
+
+
+            <option value="Electronics">
+                Electronics
+            </option>
+
+
+            <option value="Fashion">
+                Fashion
+            </option>
+
+
+            <option value="Accessories">
+                Accessories
+            </option>
+
+
+
+        </select>
+
+
+
+
+
+        <select id="sortProducts">
+
+
+            <option value="default">
+                Sort By
+            </option>
+
+
+            <option value="low">
+                Price: Low to High
+            </option>
+
+
+            <option value="high">
+                Price: High to Low
+            </option>
+
+
+            <option value="az">
+                Name A-Z
+            </option>
+
+
+            <option value="za">
+                Name Z-A
+            </option>
+
+
+        </select>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- Loader -->
+
+
+<div class="loader">
+
+    <div class="spinner"></div>
+
+</div>
+
+
+
+
+
+
+
+<!-- Products will load here -->
+
+<div class="products-grid">
+
+
+<!-- JavaScript inserts products here -->
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+
+<footer class="footer">
+
+
+<div class="container footer-content">
+
+
+
+<div>
+
+<h3>
+ShopEase
+</h3>
+
+<p>
+Shop smart, live better.
+</p>
+
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="products.html">
+Products
+</a>
+
+<a href="cart.html">
+Cart
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+Email: support@shopease.com
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+<!-- JavaScript -->
+
+
+<script src="../js/main.js"></script>
+
+<script src="../js/api.js"></script>
+
+<script src="../js/products.js"></script>
+
+
+
+</body>
+
+
+</html>

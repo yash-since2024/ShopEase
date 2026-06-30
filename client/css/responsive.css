@@ -1,0 +1,390 @@
+/* ==========================================
+   RESPONSIVE DESIGN
+   Mobile First Media Queries
+========================================== */
+
+/* ==========================================
+   LARGE DEVICES (≤1200px)
+========================================== */
+
+@media screen and (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.products-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+/* ==========================================
+   TABLETS (≤992px)
+========================================== */
+
+@media screen and (max-width:992px){
+
+/* Navbar */
+
+.navbar{
+    padding:15px 0;
+}
+
+.nav-links{
+    gap:15px;
+}
+
+/* Hero */
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-content{
+    order:2;
+}
+
+.hero-image{
+    order:1;
+}
+
+.hero-content h1{
+    font-size:38px;
+}
+
+/* Products */
+
+.products-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* Cart */
+
+.cart-container{
+    grid-template-columns:1fr;
+}
+
+.cart-summary{
+    margin-top:30px;
+}
+
+/* Footer */
+
+.footer-content{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ==========================================
+   MOBILE DEVICES (≤768px)
+========================================== */
+
+@media screen and (max-width:768px){
+
+/* Navbar */
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.nav-icons{
+    justify-content:center;
+}
+
+/* Hero */
+
+.hero{
+    padding:40px 20px;
+}
+
+.hero-content h1{
+    font-size:32px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+/* Buttons */
+
+.btn,
+.hero-btn,
+.product-btn,
+.checkout-btn,
+.auth-btn{
+    width:100%;
+}
+
+/* Product Grid */
+
+.products-grid{
+    grid-template-columns:1fr;
+}
+
+/* Product Card */
+
+.product-card{
+    max-width:400px;
+    margin:auto;
+}
+
+/* Product Details */
+
+.product-details{
+    flex-direction:column;
+}
+
+.product-image{
+    width:100%;
+}
+
+.product-info{
+    width:100%;
+}
+
+/* Search */
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box input{
+    width:100%;
+}
+
+/* Filter */
+
+.filter-box{
+    flex-direction:column;
+}
+
+/* Cart */
+
+.cart-item{
+    flex-direction:column;
+    text-align:center;
+}
+
+.quantity-control{
+    justify-content:center;
+}
+
+/* Auth */
+
+.auth-container{
+    padding:30px;
+}
+
+.form-row{
+    flex-direction:column;
+}
+
+/* Profile */
+
+.profile-container{
+    flex-direction:column;
+}
+
+.profile-sidebar{
+    width:100%;
+}
+
+.profile-content{
+    width:100%;
+}
+
+/* Admin */
+
+.admin-container{
+    flex-direction:column;
+}
+
+.admin-sidebar{
+    width:100%;
+}
+
+/* Footer */
+
+.footer-content{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE (≤576px)
+========================================== */
+
+@media screen and (max-width:576px){
+
+body{
+    font-size:15px;
+}
+
+.container{
+    width:94%;
+}
+
+/* Logo */
+
+.logo{
+    font-size:24px;
+}
+
+/* Hero */
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+
+/* Headings */
+
+.section-title h2,
+.page-title h1,
+.cart-header h1,
+.auth-header h1{
+    font-size:28px;
+}
+
+/* Product */
+
+.product-image img{
+    height:220px;
+}
+
+.product-title{
+    font-size:17px;
+}
+
+.product-price{
+    font-size:20px;
+}
+
+/* Cart */
+
+.cart-item img{
+    width:100px;
+    height:100px;
+}
+
+/* Summary */
+
+.summary-row{
+    font-size:15px;
+}
+
+.summary-row.total{
+    font-size:18px;
+}
+
+/* Auth */
+
+.auth-container{
+    padding:25px 18px;
+}
+
+/* Inputs */
+
+input,
+select,
+textarea{
+    font-size:15px;
+    padding:12px;
+}
+
+/* Buttons */
+
+button{
+    font-size:15px;
+}
+
+}
+
+/* ==========================================
+   EXTRA SMALL DEVICES (≤400px)
+========================================== */
+
+@media screen and (max-width:400px){
+
+.hero-content h1{
+    font-size:24px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+.nav-links{
+    gap:8px;
+}
+
+.product-card{
+    margin:0;
+}
+
+.auth-container{
+    padding:20px 15px;
+}
+
+.footer-content{
+    gap:20px;
+}
+
+}
+
+/* ==========================================
+   LANDSCAPE PHONES
+========================================== */
+
+@media screen and (max-height:500px){
+
+.hero{
+    min-height:auto;
+    padding:40px 0;
+}
+
+.auth-section{
+    padding:30px 0;
+}
+
+}
+
+/* ==========================================
+   LARGE DESKTOPS (≥1400px)
+========================================== */
+
+@media screen and (min-width:1400px){
+
+.container{
+    max-width:1320px;
+}
+
+.hero-content h1{
+    font-size:56px;
+}
+
+.products-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
